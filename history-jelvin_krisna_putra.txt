@@ -1,0 +1,28 @@
+    1  ls
+    2  whoami
+    3  ls
+    4  cd /
+    5  ls
+    6  exit
+    7  man free
+    8  free -m
+    9  df
+   10  df -h
+   11  man df
+   12  man df --output
+   13  df --output --help
+   14  df --output=ipcent
+   15  df --output=source
+   16  df -h --output=source
+   17  df -h --output=source, size
+   18  df -h --output=source,size
+   19  df -h --output=source,size --exclude-type=tmpfs
+   20  df -h --output=source,pcent --exclude-type=tmpfs
+   21  ls -al
+   22  chmod +x script-jelvin_krisna_putra.sh 
+   23  ls -al
+   24  ./script-jelvin_krisna_putra.sh 
+   25  echo \n
+   26  echo
+   27  ./script-jelvin_krisna_putra.sh 
+   28  history > history-jelvin_krisna_putra.txt
