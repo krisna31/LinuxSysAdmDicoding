@@ -11,7 +11,7 @@ do
   # Print disk usage in gigabytes
   echo " "
   echo "Disk Usage:"
-  df -h --output=source,size --exclude-type=tmpfs
+  df -BG --output=source,size --exclude-type=tmpfs
   sleep 3s
 
   # Print filesystem usage and Use%
