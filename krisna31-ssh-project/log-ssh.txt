@@ -1,0 +1,38 @@
+Jun 18 11:45:44 krisna sudo:   krisna : TTY=pts/2 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/apt install openssh-server
+Jun 18 11:45:53 krisna sudo:   krisna : TTY=pts/2 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server
+Jun 18 11:46:03 krisna sudo:   krisna : TTY=pts/2 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/apt-get install ssh
+Jun 18 11:46:14 krisna sudo:   krisna : TTY=pts/2 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/apt-get install ssh
+Jun 18 11:48:49 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/apt-get install ssh
+Jun 18 11:50:06 krisna useradd[4881]: new user: name=sshd, UID=128, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Jun 18 11:50:06 krisna usermod[4888]: change user 'sshd' password
+Jun 18 11:50:06 krisna chage[4895]: changed password expiry for sshd
+Jun 18 11:50:08 krisna sshd[5008]: Server listening on 0.0.0.0 port 22.
+Jun 18 11:50:08 krisna sshd[5008]: Server listening on :: port 22.
+Jun 18 11:50:59 krisna sshd[5668]: Connection closed by authenticating user dicoding 127.0.0.1 port 49474 [preauth]
+Jun 18 11:50:59 krisna sshd[5676]: Connection closed by authenticating user dicoding 127.0.0.1 port 49476 [preauth]
+Jun 18 11:51:06 krisna sshd[5689]: Accepted password for dicoding from 127.0.0.1 port 49478 ssh2
+Jun 18 11:51:06 krisna sshd[5689]: pam_unix(sshd:session): session opened for user dicoding(uid=1001) by (uid=0)
+Jun 18 11:51:08 krisna sshd[5892]: Received disconnect from 127.0.0.1 port 49478:11: disconnected by user
+Jun 18 11:51:08 krisna sshd[5892]: Disconnected from user dicoding 127.0.0.1 port 49478
+Jun 18 11:51:08 krisna sshd[5689]: pam_unix(sshd:session): session closed for user dicoding
+Jun 18 11:51:37 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/nano /etc/ssh/sshd_config
+Jun 18 11:53:47 krisna sshd[6566]: Accepted publickey for dicoding from 127.0.0.1 port 49480 ssh2: RSA SHA256:DVQs3Y4gu3NSs+vVF/MT+Pca0OESp5x9rttbWjv9OMk
+Jun 18 11:53:47 krisna sshd[6566]: pam_unix(sshd:session): session opened for user dicoding(uid=1001) by (uid=0)
+Jun 18 11:53:55 krisna sshd[6681]: Received disconnect from 127.0.0.1 port 49480:11: disconnected by user
+Jun 18 11:53:55 krisna sshd[6681]: Disconnected from user dicoding 127.0.0.1 port 49480
+Jun 18 11:53:55 krisna sshd[6566]: pam_unix(sshd:session): session closed for user dicoding
+Jun 18 11:54:13 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+Jun 18 11:54:13 krisna sshd[5008]: Received signal 15; terminating.
+Jun 18 11:54:13 krisna sshd[6988]: Server listening on 0.0.0.0 port 2000.
+Jun 18 11:54:13 krisna sshd[6988]: Server listening on :: port 2000.
+Jun 18 11:54:22 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jun 18 11:54:40 krisna sshd[6998]: Accepted publickey for dicoding from 127.0.0.1 port 55980 ssh2: RSA SHA256:DVQs3Y4gu3NSs+vVF/MT+Pca0OESp5x9rttbWjv9OMk
+Jun 18 11:54:40 krisna sshd[6998]: pam_unix(sshd:session): session opened for user dicoding(uid=1001) by (uid=0)
+Jun 18 11:55:01 krisna sshd[7108]: Received disconnect from 127.0.0.1 port 55980:11: disconnected by user
+Jun 18 11:55:01 krisna sshd[7108]: Disconnected from user dicoding 127.0.0.1 port 55980
+Jun 18 11:55:01 krisna sshd[6998]: pam_unix(sshd:session): session closed for user dicoding
+Jun 18 12:00:24 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna/Documents/LinuxSysAdmDicoding/krisna31-ssh-project ; USER=root ; COMMAND=/usr/bin/cat /etc/passwd
+Jun 18 12:00:53 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna/Documents/LinuxSysAdmDicoding/krisna31-ssh-project ; USER=root ; COMMAND=/usr/bin/cat /etc/passwd
+Jun 18 12:01:56 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna/Documents/LinuxSysAdmDicoding/krisna31-ssh-project ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Jun 18 12:02:02 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna/Documents/LinuxSysAdmDicoding/krisna31-ssh-project ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Jun 18 12:02:18 krisna sudo:   krisna : TTY=pts/0 ; PWD=/home/krisna/Documents/LinuxSysAdmDicoding/krisna31-ssh-project ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
